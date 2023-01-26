@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" th:replace="fragments/publicHead :: publicHead">
+<style type="text/css">
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+	<div th:replace="fragments/publicHeader :: publicHeader"></div>
+	<div class="bg">
+		<a th:href="@{/{shortURL}/home(shortURL=${shortUrl})}">						
+			<img th:attr="src=${routeprefix+'/public/img/page_not_found.jpg'}" alt="" style="width:80%; padding:62px 0px 56px 300px;"/>
+		</a>
+	</div>
+	
+	<div lang="en" th:replace="fragments/publicFooter :: publicFooter"></div>
+	
+</body>
+</html>

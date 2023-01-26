@@ -1,0 +1,17 @@
+*.class
+.classpath
+.project
+*.classpath
+*.project
+/target/*
+
+/**/.settings/
+
+\.metadata/
+/target/**
+/build/*
+/target/*.*
+target/*
+../ROOTv2/target/**
+/target/
+/bin/

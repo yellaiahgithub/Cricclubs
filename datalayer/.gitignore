@@ -1,0 +1,13 @@
+*.class
+.classpath
+.project
+/target/*
+
+/**/.settings/
+
+\.metadata/
+/target/
+*.prefs
+*.component
+.settings/*
+bin/
